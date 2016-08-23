@@ -1,6 +1,7 @@
 FROM alpine:3.4
 
-RUN apk add --update --no-cache \
+RUN apk upgrade --update \
+    && apk add --update --no-cache \
         python3 \
         python3-dev \
         build-base \
